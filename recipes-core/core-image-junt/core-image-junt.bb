@@ -37,7 +37,7 @@ inherit core-image-full-cmdline
 python do_display_banner() {
     bb.plain("***********************************************");
     bb.plain("*                                             *");
-    bb.plain("*  Example recipe created by bitbake-layers   *");
+    bb.plain("*  JUNT layer                                 *");
     bb.plain("*                                             *");
     bb.plain("***********************************************");
 }
