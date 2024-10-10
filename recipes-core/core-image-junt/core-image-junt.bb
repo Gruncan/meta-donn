@@ -30,6 +30,8 @@ IMAGE_INSTALL += " \
     ntp \
     golang \
     gcc \
+    autoconf \
+    strace \
 "
 
 inherit core-image-full-cmdline
@@ -37,7 +39,7 @@ inherit core-image-full-cmdline
 python do_display_banner() {
     bb.plain("***********************************************");
     bb.plain("*                                             *");
-    bb.plain("*  JUNT layer                                 *");
+    bb.plain("*  Junt layer                                 *");
     bb.plain("*                                             *");
     bb.plain("***********************************************");
 }
