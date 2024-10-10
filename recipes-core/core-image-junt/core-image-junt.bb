@@ -7,6 +7,7 @@ LICENSE = "MIT"
 IMAGE_INSTALL += " \
     packagegroup-core-boot \
     packagegroup-core-full-cmdline \
+    packagegroup-core-buildessential \
     wpa-supplicant \
     dhcpcd \
     inetutils \
