@@ -2,7 +2,11 @@ SUMMARY = "bitbake-layers recipe"
 DESCRIPTION = "Custom image extending core-image-fullcmd"
 LICENSE = "MIT"
 
+IMAGE_FEATURES += "splash ssh-server-openssh"
+
 IMAGE_INSTALL += " \
+    packagegroup-core-boot \
+    packagegroup-core-full-cmdline \
     wpa-supplicant \
     dhcpcd \
     inetutils \
@@ -28,13 +32,12 @@ IMAGE_INSTALL += " \
     procps \
     linux-firmware \
     ntp \
-    golang \
     gcc \
     autoconf \
     strace \
 "
 
-inherit core-image-full-cmdline
+inherit core-image
 
 python do_display_banner() {
     bb.plain("***********************************************");
