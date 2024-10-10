@@ -2,7 +2,7 @@ SUMMARY = "bitbake-layers recipe"
 DESCRIPTION = "Custom image extending core-image-fullcmd"
 LICENSE = "MIT"
 
-IMAGE_FEATURES += "splash ssh-server-openssh"
+
 
 IMAGE_INSTALL += " \
     packagegroup-core-boot \
