@@ -43,7 +43,7 @@ inherit core-image
 python do_display_banner() {
     bb.plain("***********************************************");
     bb.plain("*                                             *");
-    bb.plain("*  Junt layer                                 *");
+    bb.plain("*  Donn layer                                 *");
     bb.plain("*                                             *");
     bb.plain("***********************************************");
 }
